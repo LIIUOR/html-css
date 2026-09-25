@@ -1,0 +1,167 @@
+.parent{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+}
+.child{
+    width: 50px;
+    height: 50px;
+    border: 1px solid green;
+}
+.parent1{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+}
+.child1{
+    width: 50px;
+    height: 50px;
+    border: 1px solid green;
+}
+.parent2{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+}
+.child2{
+    width: 50px;
+    height: 50px;
+    border: 1px solid green;
+}
+.parent3{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+}
+.child3{
+    width: 50px;
+    height: 50px;
+    border: 1px solid green;
+}
+.parent4{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+}
+.child4{
+    width: 50px;
+    height: 50px;
+    border: 1px solid green;
+}
+.parent5{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+}
+.parent6{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+}
+.parent7{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+}
+.parent8{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+}
+.parent8 .child5{
+    border: 1px solid green;  
+    width: 50px;
+}
+.parent7-1{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+}
+.parent8-1{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+}
+.parent8-1 .child5{
+    border: 1px solid green;
+    height: 40px;
+}
+.parent9{
+    margin-top: 5px;
+    display: flex;
+	align-items: center;
+	width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+.parent9 .child5{
+    width: 50px;
+    height: 50px;
+    border: 1px solid green;
+}
+.parent9 .child5.elem{
+    align-self: flex-start;
+}
+.parent10{
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+.parent10 .child5{
+    width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+.parent10 .child5.elem{
+    order: 1;
+    border: 1px solid red;
+}
