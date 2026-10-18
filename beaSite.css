@@ -1,0 +1,8 @@
+.frameHome{background-color:#f4f4f4;display: flex; justify-content: center;margin-top: 5px;}
+.frameCenter{position: relative; width: 900px;background-color: #ffff;margin-top: 5px;}
+.top{width: 900px;height: 40px;background-color: #c6a200;}
+.top p{word-spacing: 5px; display: inline-block;text-align: center;text-indent: 20px;}
+.cont{display: flex;gap: 20px;}
+.block1{width: 550px;padding-left: 15px;}.block1 h4{margin-bottom: -5px;}.block1 img{width: 500px;height: 300px;}
+.block2{width: 400px;}.block2 h4{margin-bottom: -5px;}
+table{width: 70%;margin-top: 20px;} table th{border: 1px solid red;text-align: center;}
