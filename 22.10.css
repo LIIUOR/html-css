@@ -1,0 +1,24 @@
+.redCol {
+    border-color: red;
+}
+.kvidi{
+    height: 30px;
+    width: 200px;
+
+}
+#form1{color: red;}
+#textarea1{height: 150px;width: 300px;}
+#textarea2{height: 150px;width: 300px;}
+#textarea3{resize: horizontal;}
+#textarea4{resize: vertical;}
+#textarea5{resize: none;}
+#textarea6{resize: both;}
+#textarea8{resize: none;}#textarea8::placeholder{color: green;}
+#textarea9{resize: both;}#textarea9::placeholder{color: green;}
+#textarea10-1::placeholder{color: green;}#textarea10-1{resize: none;}#textarea10-2{resize: both;}#textarea10-2::placeholder{color: green;}
+#textarea11{resize: none;}
+#textarea12{resize: both;}
+#button1{width: 150px;height: 50px;}
+#input1:focus {border: 1px solid red;box-shadow: 0 0 3px red;}
+#input2:checked+label{color: red;} #input3:checked+label{color: red;}
+#input4:disabled{border: 1px solid red;box-shadow: 0 0 3px red;}
