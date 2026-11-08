@@ -1,0 +1,211 @@
+#parent1 {
+    background-image: url("https://print4you.com.ua/upload/resize_cache/iblock/6ec/444_480_1/6ec33b2dd92bec310bf4b52993e9135c.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    padding: 30px;
+}
+
+.element {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    font-size: 50px;
+    font-weight: bold;
+
+    border: 10px solid red;
+}
+
+.element.n1 {
+    background: black;
+    color: red;
+    opacity: 0.7;
+}
+
+.element.n2 {
+    background: rgba(0, 0, 0, 0.7);
+    color: red;
+}
+
+#elem3 {
+    text-shadow: 10px 5px 3px red;
+}
+
+#elem4 {
+    text-shadow: -10px -5px green;
+}
+
+#elem5 {
+    color: green;
+    text-shadow: 15px -10px green;
+}
+
+#elem7 {
+    text-shadow: 0px 0px 5px green;
+}
+#elem8 {
+    text-shadow: 
+        1px 10px 5px green,
+        1px -10px 5px red;
+}
+#elem9 {
+    text-shadow: 3px 2px 3px black;
+}
+#elem10 {
+    text-shadow: 3px 2px 3px black;
+}
+#elem11 {
+	box-shadow: 20px 15px 5px red;
+	border: 1px solid black;
+	width: 200px;
+	height: 200px;
+}
+#elem12 {
+	box-shadow: 20px -15px green;
+	border: 1px solid black;
+	width: 200px;
+	height: 200px;
+}
+#elem13 {
+	box-shadow: 0 0 5px black;
+	border: 1px solid black;
+	width: 200px;
+	height: 200px;
+}
+#elem14 {
+	box-shadow: 4px 3px 3px black;
+	border: 1px solid black;
+	width: 200px;
+	height: 200px;
+}
+#elem15 {
+	box-shadow: 4px 3px 3px black,-4px -3px 3px black;
+	border: 1px solid black;
+	width: 200px;
+	height: 200px;
+}
+#elem16 {
+	box-shadow: 30px 0 black,-30px 0 black,0 30px black,0 -30px black;
+	border: 1px solid black;
+	width: 200px;
+	height: 200px;
+}
+#elem17 {
+	box-shadow: 20px 30px black;
+	border: 1px solid black;
+	width: 200px;
+	height: 200px;
+}
+#elem18 {
+	box-shadow: 20px 30px 5px black;
+	border: 1px solid black;
+	width: 200px;
+	height: 200px;
+}
+#elem19 {
+	box-shadow: 20px 30px 5px black,-20px -30px 5px black;
+	border: 1px solid black;
+	width: 200px;
+	height: 200px;
+}
+#elem20 {
+	box-shadow:inset 5px 0 5px black,inset 0 5px 10px black;
+	border: 1px solid black;
+	width: 200px;
+	height: 200px;
+}
+#elem21 {
+	background: linear-gradient(yellow, white);
+	width: 200px;
+	height: 200px;
+    border: 1px solid black;
+}
+#elem22 {
+	background: linear-gradient(to right,yellow, white);
+	width: 200px;
+	height: 200px;
+    border: 1px solid black;
+}#elem22 {
+	background: linear-gradient(to right,yellow, white);
+	width: 200px;
+	height: 200px;
+    border: 1px solid black;
+}
+#elem23 {
+	background: linear-gradient(to left,yellow, white);
+	width: 200px;
+	height: 200px;
+    border: 1px solid black;
+}
+#elem24 {
+	background: linear-gradient(to top left,red, white);
+	width: 200px;
+	height: 200px;
+    border: 1px solid black;
+}
+#elem25 {
+	background: linear-gradient(to right,red,purple,blue);
+	width: 200px;
+	height: 200px;
+    border: 1px solid black;
+}
+#elem26 {
+	background: linear-gradient(to top,red 50%,white 50%);
+	width: 200px;
+	height: 200px;
+    border: 1px solid black;
+}
+#elem27 {
+	background: radial-gradient(rgb(77, 162, 205), rgb(17, 103, 149));
+	width: 200px;
+	height: 200px;
+    border: 1px solid black;
+}
+#elem28 {
+	background: radial-gradient(at top,rgb(77, 162, 205), rgb(17, 103, 149));
+	width: 200px;
+	height: 200px;
+    border: 1px solid black;
+}
+#elem29 {
+	background: radial-gradient(at top left,rgb(129, 170, 190) 20px, rgb(17, 103, 149) 80px);
+	width: 200px;
+	height: 200px;
+    border: 1px solid black;
+}
+#elem30 {
+	background: radial-gradient(at center,black 10px,white 20px,white 20px, green 60px);
+	width: 200px;
+	height: 200px;
+    border: 1px solid black;
+}
+#elem31 {
+	background: repeating-linear-gradient(to left, black 0px, black 10px, white 10px, white 20px);
+	width: 400px;
+	height: 200px;
+	border: 1px solid black;
+}
+#elem32 {
+	background: repeating-linear-gradient(to bottom, black 0px, black 10px, white 10px, white 20px);
+	width: 400px;
+	height: 200px;
+	border: 1px solid black;
+}
+#elem33 {
+	background: repeating-linear-gradient(to top,white 0px,white 7px, black 7px, black 9px);
+	width: 400px;
+	height: 200px;
+	border: 1px solid black;
+}
+#elem34 {
+	background: repeating-linear-gradient(45deg, red 0px, red 4px, white 4px, white 10px);
+	width: 400px;
+	height: 200px;
+	border: 1px solid black;
+}
+#elem35 {
+	background: repeating-radial-gradient(circle at center, black 0px, black 5px, white 5px, white 11px);
+	width: 400px;
+	height: 200px;
+	border: 1px solid black;
+}
