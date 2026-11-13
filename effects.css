@@ -1,0 +1,396 @@
+.elem1{
+    border: 1px solid red;
+    transition: background 1s ease-out;
+    height: 100px;
+    width: 300px;
+}.elem1:hover{background: red;}
+.elem2{
+    border: 1px solid red;
+    transition: all 1s ease-out;
+    height: 100px;
+    width: 300px;
+    background: #ffffff;
+}.elem2:hover{background-color: red; color: white;}
+.elem3{
+    border: 1px solid red;
+    transition: all 1s ease-out;
+    width: 300px;
+    height: 100px;
+}.elem3:hover{width: 100%;}
+.elem4{
+    border: 1px solid red;
+    width: 300px;
+    height: 100px;
+    transition: all 1s ease-out;
+}.elem4:hover{width: 70%; margin-left: 10%;}
+.elem5{
+    border: 1px solid red;
+    width: 300px;
+    height: 100px;
+    transition: all 1s ease-out 2s;
+    background: white;
+}.elem5:hover{width: 70%;}
+.elem6{
+    border: 1px solid red;
+    width: 300px;
+    height: 100px;
+    transition: width 3s cubic-bezier(.20,-0.4,0,.81);
+}.elem6:hover{width: 90%;}
+.elem7{
+    border: 1px solid black;
+    width: 300px;
+    height: 30px;
+    padding: 0 5px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    transition: all 1s ease-out;
+}.elem7:focus{
+    width: 500px;
+    border: 1px solid blue;
+    color: blue; 
+    outline: none;
+}
+.elem8{
+    width: 300px;
+    height: 30px;
+    padding: 0 5px;
+    border: 1px solid black;
+    border-radius: 2px;
+    box-sizing: border-box; 
+    transition: all 1s ease-out;
+}.elem8:focus{
+    border: 1px solid blue;
+    box-shadow: 0 0 5px blue;
+    color: blue;
+    outline: none;
+}
+.elem9{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    animation: anim1 4s infinite;
+}@keyframes anim1 {
+    from{
+        margin-left: 3px;
+    }
+    to{
+        margin-left: 500px;
+    }
+}
+.elem10{
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    animation: anim2 4s infinite;
+}@keyframes anim2{
+    from{background: white;}
+    to{background: red;}
+}
+.elem11{
+    margin-bottom: 300px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    position: relative; 
+    animation: anim3 8s linear infinite;
+}@keyframes anim3{
+    0%{left: 0; top: 0;}
+    25%{left: 300px;top: 0;}
+    50%{left: 300px;top: 300px;} 
+    75%{left: 0;top: 300px;}
+    100%{left: 0;top: 0;}
+}
+.elem12{
+    margin-bottom: 300px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    position: relative;
+    animation: anim4-1 8s linear infinite, anim4-2 2s linear infinite;
+}@keyframes anim4-1{
+    0%{left: 0; top: 0;}
+    25%{left: 300px;top: 0;}
+    50%{left: 300px;top: 300px;} 
+    75%{left: 0;top: 300px;}
+    100%{left: 0;top: 0;}
+}@keyframes anim4-2{
+    0%{background: white;}
+    50%{background: red;}
+    100%{background: white;}
+}
+.elem13{
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    animation: anim5 2s alternate infinite;
+}@keyframes anim5{
+    from{margin-left: 0%;}
+    to{margin-left: 25%;}
+}
+.elem14{
+    height: 50px;
+    border: 1px solid red;
+    animation: anim6 2s ease alternate infinite;
+    animation-play-state: paused;
+}.elem14:hover{animation-play-state: running;}@keyframes anim6 {
+    from{width: 10%;}
+    to{width: 50%;}
+}
+.elem15{
+    height: 50px;
+    border: 1px solid red;
+    animation: anim7 2s ease alternate infinite;
+    animation-play-state: paused;
+}.elem15start:hover + .elem15{animation-play-state: running;}
+.elem15start{
+    width: 50px;
+    height: 50px;
+    border: 1px solid green;
+    margin-bottom: 30px;
+}@keyframes anim7 {
+    from{width: 50px;}
+    to{width: 100%;}
+}
+.elem16{
+    margin: 0 auto;
+    width: 220px;
+    height: 220px;
+    border: 1px solid red;
+    position: relative;
+}.elem16-1{
+    background: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    position: absolute;
+    animation: anim8 5s infinite;
+}@keyframes anim8{
+    40%,70%,90%{
+        animation-timing-function: ease-out;
+        bottom: 0;
+    }0%{
+        bottom: 200px;
+        left: 0;
+        animation-timing-function: ease-in;
+    }55%{
+        bottom: 50px;
+        animation-timing-function: ease-in;
+    }80%{
+        bottom: 25px;
+        animation-timing-function: ease-in;
+    }95%{
+        bottom: 10px;
+        animation-timing-function: ease-in;
+    }100%{
+        left: 110px;
+        bottom: 0;
+        animation-timing-function: ease-out;
+    }  
+}
+.elem17{
+    margin-left: 50px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    animation: anim9 1s ease infinite;
+}@keyframes anim9{to{transform: rotate(45deg);}}
+.elem18{
+    /* margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 0;
+    margin-bottom: 50px; */
+    margin: 50px 0 50px 50px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    animation: anim10 1s ease infinite;
+}@keyframes anim10{to{transform: scale(1.5)}}
+.elem19{
+    margin: 50px 0 50px 50px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    animation: anim11 1s ease infinite;
+}@keyframes anim11{to{transform: skew(45deg);}}
+.elem20{
+    margin: 50px 0 50px 50px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    animation: anim12 1s ease infinite;
+}@keyframes anim12{to{transform: translateX(50px);}}
+.elem21{
+    margin: 50px 0 50px 50px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    animation: anim13 1s ease infinite;
+}@keyframes anim13{to{transform: translate(-50px,-50px);}}
+.elem22{
+    margin: 50px 0 50px 50px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    animation: anim14 1s ease infinite;
+    transform-origin: right bottom;
+}@keyframes anim14{to{transform: rotate(45deg);}}
+.elem23{
+    margin: 0 0 50px 50px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    animation: anim15 1s ease infinite;
+    transform-origin: left bottom;
+}@keyframes anim15{to{transform: rotate(45deg);}}
+.elem24{
+    margin: 50px 0 50px 50px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    animation: anim16 1s ease infinite;
+    transform-origin: center;
+}@keyframes anim16{to{transform: rotate(45deg);}}
+.elem25{
+    margin: 50px 0 50px 50px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    animation: anim17 1s ease infinite;
+    transform-origin: right top;
+}@keyframes anim17{to{transform: rotate(-45deg);}}
+.elem26{
+    margin: 50px 0 50px 50px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    animation: anim18 1s ease infinite;
+    transform-origin: right bottom;
+}@keyframes anim18{to{transform: scale(1.5);}}
+.elem27{
+    margin: 50px 0 50px 50px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    animation: anim19 1s ease infinite;
+    transform-origin: right top;
+}@keyframes anim19{to{transform: scale(1.5)}}
+.elem28{
+    margin: 50px 0 50px 50px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    animation: anim20 1s ease infinite;
+    transform-origin: right bottom;
+}@keyframes anim20{to{transform: skew(45deg);}}
+.elem29{
+    margin: 50px 0 50px 50px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    animation: anim21 1s ease infinite;
+    transform-origin: right top;
+}@keyframes anim21{to{transform: skew(45deg);}}
+.elem30{
+    margin: 50px 0 50px 50px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    animation: anim22 1s ease infinite;
+    transform-origin: right bottom;
+}@keyframes anim22{to{transform: skew(45deg);}}
+.elem31{
+    margin: 0 auto;
+    margin-bottom: 200px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    border-radius: 50%;
+    position: relative;
+}.elem31-1{
+    position: absolute;
+    top: 75px;
+    left: 150%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid red;
+    transform-origin: -200px center;
+    animation: anim23 8s linear infinite,anim24 8s linear infinite;
+}@keyframes anim23{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@keyframes anim24{
+    0%{background: white;}
+    50%{background: red;}
+    100%{background: white;}
+}
+.menu1{
+    display: flex;
+}.menu1 a{
+    padding: 15px;
+    margin: 3px;
+    color: blue;
+    text-decoration: none;
+    background: white;
+    border: 1px solid blue;
+    transition: transform 1s;
+}.menu1 a:hover,.menu1 a.active1{
+    transform: rotate(10deg) scale(1.1);
+}
+.menu2{
+    display: flex;
+    transform: rotate(-5deg);
+    transform-origin: top right; 
+    margin-bottom: 200px;
+}.menu2 a{
+    padding: 15px;
+    margin: 3px;
+    color: blue;
+    text-decoration: none; 
+    border: 1px solid blue;
+    background: white;
+    transition: transform 1s;
+}.menu2 a:hover{
+    transform: scale(1.2) skew(-7deg);
+}
+.menu3{display: flex;}
+.menu3 a{
+    padding: 15px;
+    margin: 3px;
+    color: blue;
+    text-decoration: none;
+    border: 1px solid blue;
+    background: white;
+    transition: transform .3s;
+    transform: skew(-7deg);
+}.menu3 a:hover{
+    transform: skew(-7deg) scale(1.3);
+    z-index: 1;
+}
+.elem32{
+    width: 300px;
+    margin: 0 auto;
+    text-align: justify;
+    hyphens: auto;
+}.elem32-1{
+    position: fixed;
+    top: 350px; 
+    right: 0;
+    padding: 10px 30px;
+    border: 1px solid gray;
+    background: white;
+    text-decoration: none;
+    color: blue;
+    transform: rotate(90deg);
+    transform-origin: top right;
+}.elem32-1:hover{
+    border-color: black;
+} 
+.elem33{
+    width: 300px;
+    margin: 30px auto;
+    text-align: justify;
+    hyphens: auto;
+    transform: skew(3deg);
+}
